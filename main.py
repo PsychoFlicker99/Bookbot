@@ -1,4 +1,12 @@
 import sys
+
+if len(sys.argv) < 2:
+    print('Usage: python3 main.py <path_to_book>'),  
+    sys.exit(1)
+    
+
+
+
 from stats import word_counter
 from stats import character_counter
 from stats import sorter
@@ -10,7 +18,7 @@ def get_book_text(file_path):
         return text 
 
 def main():
-    return get_book_text('./books/frankenstein.txt')
+    return get_book_text(sys.argv[1])
 
 
 sorter(character_counter(main()))
