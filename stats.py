@@ -4,7 +4,7 @@ def word_counter(book):
     counter = 0
     for words in as_string:
         counter += 1
-    return print(f'{counter} words found in the document.')
+    return print(f'Found {counter} total words.')
 
 def character_counter(book):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
@@ -32,7 +32,7 @@ def sorter(dict):
         new_dict = {'char': pair, 'num': dict[pair]}
         list.append(new_dict)
     list.sort(reverse=True, key=sort_assist)
-    return print(list)
+    return list
     
 
 
